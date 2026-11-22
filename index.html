@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#060c24">
+  <meta name="description" content="Sey - Player Status System.">
+  <title>Status - Sey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+
+    <!-- ===== STATUS WINDOW ===== -->
+    <section class="window" aria-labelledby="status-title">
+      <div class="banner"><div><h1 id="status-title">STATUS</h1></div></div>
+      <div class="frame">
+
+        <div class="profile">
+          <div class="portrait">
+            <!-- Foto: taruh file sey.jpg di folder yang sama. Kalau tidak ada, siluet ini yang tampil. -->
+            <svg viewBox="0 0 130 125" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <defs><radialGradient id="g" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#6f8fb8"/><stop offset=".6" stop-color="#22406b"/><stop offset="1" stop-color="#0c1a34"/></radialGradient></defs>
+              <rect width="130" height="125" fill="url(#g)"/>
+              <path d="M12 125c2-24 20-34 53-34s51 10 53 34z" fill="#0f1b30"/>
+              <path d="M52 88h26v14c-6 6-20 6-26 0z" fill="#b99a86"/>
+              <ellipse cx="65" cy="58" rx="24" ry="29" fill="#c9ab97"/>
+              <path d="M39 56c-4-30 12-42 28-42s33 10 25 42c-3-12-8-18-14-20-6 6-20 8-30 4-5 3-8 9-9 16z" fill="#0b1120"/>
+            </svg>
+            <img src="sey.jpeg" alt="Foto Sey" onerror="this.remove()">
+          </div>
+
+          <div class="info">
+            <div class="name"><h2>SEY</h2><span>Lv.1</span></div>
+            <div class="meter-row"><b>HP</b><span>100 / 100</span></div>
+            <div class="meter hp"><i></i></div>
+            <div class="meter-row"><b>MP</b><span>100 / 100</span></div>
+            <div class="meter mp"><i></i></div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span>STRENGTH</span><strong>C</strong></div>
+          <div class="stat"><span>AGILITY</span><strong>C+</strong></div>
+          <div class="stat"><span>MAGIC POWER</span><strong>????</strong></div>
+        </div>
+
+        <div class="band">INNATE TRAITS</div>
+        <ul class="traits">
+          <li>[Story Observer B+]</li>
+          <li>[Critical Thinker B]</li>
+        </ul>
+
+        <a class="confirm" href="#quests">CONFIRM</a>
+      </div>
+    </section>
+
+    <!-- ===== QUEST WINDOW ===== -->
+    <section class="window" id="quests" aria-labelledby="quest-title">
+      <div class="banner"><div><h2 id="quest-title">DAILY QUEST</h2></div></div>
+      <div class="frame">
+        <p class="lead">Complete the quests to connect with the player.</p>
+        <div class="quest-list">
+          <a class="quest" href="https://www.instagram.com/just_sey143/" target="_blank" rel="noopener"><b class="qicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></b><span><strong>Visit Instagram</strong><small>Follow the player's journey</small></span><i aria-hidden="true">↗</i></a>
+          <a class="quest" href="https://youtube.com/@otakuchanel2693?si=O62fClOzstbKLUP4" target="_blank" rel="noopener"><b class="qicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"/></svg></b><span><strong>Visit YouTube</strong><small>Watch the latest content</small></span><i aria-hidden="true">↗</i></a>
+          <a class="quest" href="https://trakteer.id/otaku%20chanel/" target="_blank" rel="noopener"><b class="qicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-8-4.9-8-10.7A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 8 2.8c0 5.8-8 10.7-8 10.7z"/></svg></b><span><strong>Support Player</strong><small>Support via Trakteer</small></span><i aria-hidden="true">↗</i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Sey</footer>
+  </main>
+</body>
+</html>
